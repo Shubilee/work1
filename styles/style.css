@@ -1032,6 +1032,7 @@ body {
 .flasks__flask {
   display: -webkit-box;
   display: -ms-flexbox;
+  flex: 33%;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1116,20 +1117,26 @@ body {
 }
 
 .flasks__flask--light {
-  margin-right: 154px;
+  /* margin-right: 154px;  */
 }
 
 .flasks__flask.hide {
   opacity: 0;
   pointer-events: none;
 }
-
+.flasks__flask div{
+height: 300px;
+width: 100%;
+text-align: center;
+margin-bottom: 20px;
+}
 .flasks__flask img {
-  margin-bottom: 20px;
+  display: inline-block;
+  /* margin-bottom: 20px; */
   width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transition: .5s;
@@ -1227,7 +1234,7 @@ body {
     font-size: 56px;
   }
   .flasks__flask img {
-    width: 70%;
+    /* width: 70%; */
   }
   .flasks__flask-name {
     font-size: 76px;
@@ -1294,7 +1301,7 @@ body {
     padding-top: 76px;
   }
   .flasks__flask img {
-    width: 60%;
+    /* width: 60%; */
   }
   .flasks__title {
     font-size: 48px;
@@ -1307,7 +1314,7 @@ body {
 
 @media screen and (max-width: 970px) {
   .flasks__flask img {
-    width: 50%;
+    /* width: 50%; */
   }
   .flasks {
     padding-top: 56px;
@@ -1431,6 +1438,10 @@ body {
   .flasks__title {
     font-size: 32px;
   }
+    .flasks__flask div {
+      height: 250px;
+      
+    }
   .flasks__flask-price {
     font-size: 18px;
   }
@@ -1467,6 +1478,10 @@ body {
   .flasks__flask {
     margin-bottom: 200px;
   }
+    .flasks__flask div {
+      height: 200px;
+  
+    }
   .flasks__flask-title {
     font-size: 32px;
   }
@@ -1494,6 +1509,10 @@ body {
   .flasks__flask-title {
     font-size: 28px;
   }
+     .flasks__flask div {
+       height: 150px;
+  
+     }
   .flasks__flask-content--creative-second {
     left: 44%;
   }
